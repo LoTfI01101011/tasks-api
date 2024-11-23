@@ -1,12 +1,14 @@
-import createApp from "./lib/create-app";
+import index from "@/routes/index.route";
+
 import configureOpenAPI from "./lib/configure-openAPI";
-import index from "@/routes/index.route"
-const app = createApp()
+import createApp from "./lib/create-app";
+
+const app = createApp();
 const routes = [
-    index,
-]
-configureOpenAPI(app)
+  index,
+];
+configureOpenAPI(app);
 routes.forEach((route) => {
-    app.route("/" , route)
-})
+  app.route("/", route);
+});
 export default app;
