@@ -9,9 +9,11 @@
   "dependencies": {
     "@hono/node-server": "^1.13.7",
     "@hono/zod-openapi": "^0.17.1",
+    "@libsql/client": "^0.14.0",
     "@scalar/hono-api-reference": "^0.5.161",
     "dotenv": "^16.4.5",
     "dotenv-expand": "^12.0.1",
+    "drizzle-orm": "^0.36.4",
     "hono": "^4.6.11",
     "hono-pino": "^0.6.0",
     "pino": "^9.5.0",
@@ -22,6 +24,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^3.9.2",
     "@types/node": "^20.17.7",
+    "drizzle-kit": "^0.28.1",
     "eslint": "^9.15.0",
     "eslint-plugin-format": "^0.1.2",
     "tsx": "^4.19.2"
